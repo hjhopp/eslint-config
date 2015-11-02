@@ -139,7 +139,7 @@ module.exports = {
             "next",
             "done"
         ]],
-        "global-require": 1,        // enforce require() on top-level module scope
+        "global-require": 0,        // enforce require() on top-level module scope
         "handle-callback-err": 0,   // enforces error handling in callbacks (on by default in the node environment)
         "no-mixed-requires": 0,     // disallow mixing regular variable and require declarations (on by default in the node environment)
         "no-new-require": 0,        // disallow use of new operator with the require function (on by default in the node environment)
