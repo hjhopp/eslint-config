@@ -80,7 +80,8 @@ module.exports = {
             "exceptions" : {
                 "AssignmentExpression" : true,
                 "Property" : true,
-                "VariableDeclarator" : true
+                "VariableDeclarator" : true,
+                "LogicalExpression" : true
             }
         }],
         "no-multi-str": 2,              // disallow use of multiline strings
