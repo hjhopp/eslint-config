@@ -117,6 +117,11 @@ module.exports = {
         "strict": 0, // controls location of Use Strict Directives
 
 
+        ////////// Legacy //////////
+        
+        "no-bitwise": 2, // disallow the usage of bitwise operators (|, &, <<, >>) as they're often an error
+
+
         ////////// Variables //////////
 
         "init-declarations": 0,           // enforce or disallow variable initializations at definition
@@ -224,4 +229,4 @@ module.exports = {
         "spaced-comment": [1, "always"],                // require or disallow a space immediately following the // in a line comment
         "wrap-regex": 0                                 // require regex literals to be wrapped in parentheses
     }
-}
+};
