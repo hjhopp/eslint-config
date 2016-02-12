@@ -60,7 +60,6 @@ module.exports = {
         "no-caller": 2,                 // disallow use of arguments.caller or arguments.callee
         "no-div-regex": 1,              // disallow division operators explicitly at beginning of regular expression
         "no-else-return": 2,            // disallow else after a return in an if
-        "no-empty-label": 2,            // disallow use of labels for anything other then loops and switches
         "no-empty-pattern": 2,          // disallow use of empty destructuring patterns
         "no-eq-null": 0,                // disallow comparisons to null without a type-checking operator
         "no-eval": 2,                   // disallow use of eval()
@@ -221,10 +220,20 @@ module.exports = {
         "space-after-keywords": 0,                      // require a space after certain keywords
         "space-before-blocks": [2, "always"],           // require or disallow space before blocks
         "space-before-function-paren": [2, "never"],    // require a space after function names
-        "space-before-keywords": [2, "always"],         // require a space before certain keywords (fixable)
+        "keyword-spacing": [2, {                        // require spacing before most keywords (fixable)
+            "before" : true,
+            "after" : false,
+            "overrides" : {
+                "return" : {
+                    "after" : true
+                },
+                "else" : {
+                    "after" : true
+                }
+            }
+        }],
         "space-in-parens": 0,                           // require or disallow spaces inside parentheses
         "space-infix-ops": 2,                           // require spaces around operators
-        "space-return-throw-case": 2,                   // require a space after return, throw, and case
         "space-unary-ops": 0,                           // Require or disallow spaces before/after unary operators (words on by default, nonwords off by default)
         "spaced-comment": [1, "always"],                // require or disallow a space immediately following the // in a line comment
         "wrap-regex": 0                                 // require regex literals to be wrapped in parentheses
