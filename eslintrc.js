@@ -209,7 +209,7 @@ module.exports = {
         "operator-linebreak": [2, "after"],         // enforce operators to be placed before or after line breaks
         "padded-blocks": [1, "never"],              // enforce padding within blocks
         "quote-props": [2, "as-needed"],            // require quotes around object literal property names
-        "quotes": [2, "double"],                    // specify whether double or single quotes should be used
+        "quotes": [2, "double", "avoid-escape"],    // specify whether double or single quotes should be used
         "require-jsdoc": 0,                         // Require JSDoc comment
         "semi-spacing": [1, {                       // disallow space before/after semicolon
             "before" : false,
