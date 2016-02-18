@@ -229,6 +229,9 @@ module.exports = {
                 },
                 "else" : {
                     "after" : true
+                },
+                "try" : {
+                    "after" : true
                 }
             }
         }],
