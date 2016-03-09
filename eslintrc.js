@@ -90,7 +90,7 @@ module.exports = {
         "no-new-wrappers": 2,           // disallows creating new instances of String, Number, and Boolean
         "no-octal": 2,                  // disallow use of octal literals
         "no-octal-escape": 2,           // disallow use of octal escape sequences in string literals, such as var foo = "Copyright \251";
-        "no-param-reassign": 1,         // disallow reassignment of function parameters
+        "no-param-reassign": 0,         // disallow reassignment of function parameters
         "no-process-env": 0,            // disallow use of process.env
         "no-proto": 2,                  // disallow usage of __proto__ property
         "no-redeclare": 2,              // disallow declaring the same variable more then once
