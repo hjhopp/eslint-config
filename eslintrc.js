@@ -165,7 +165,7 @@ module.exports = {
         "comma-spacing": 2,                     // enforce spacing before and after comma
         "comma-style": [2, "last"],             // enforce one true comma style
         "computed-property-spacing": 0,         // require or disallow padding inside computed properties (fixable)
-        "consistent-this": [2, "self"],         // enforces consistent naming when capturing the current execution context
+        "consistent-this": [2, "self", "ctrl"], // enforces consistent naming when capturing the current execution context
         "eol-last": 1,                          // enforce newline at the end of file, with no multiple empty lines
         "func-names": 0,                        // require function expressions to have a name
         "func-style": [1, "declaration"],       // enforces use of function declarations or expressions
