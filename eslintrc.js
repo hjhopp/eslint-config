@@ -76,11 +76,11 @@ module.exports = {
         "no-loop-func": 1,              // disallow creation of functions within loops
         "no-magic-numbers": 0,          // disallow the use of magic numbers
         "no-multi-spaces": [1, {        // disallow use of multiple spaces
-            "exceptions" : {
-                "AssignmentExpression" : true,
-                "Property" : true,
-                "VariableDeclarator" : true,
-                "LogicalExpression" : true
+            "exceptions": {
+                "AssignmentExpression": true,
+                "Property": true,
+                "VariableDeclarator": true,
+                "LogicalExpression": true
             }
         }],
         "no-multi-str": 2,              // disallow use of multiline strings
@@ -178,11 +178,11 @@ module.exports = {
         }],
         "linebreak-style": 0,                       // disallow mixed 'LF' and 'CRLF' as linebreaks
         "lines-around-comment": [0, {               // enforce empty lines around comments
-            "beforeBlockComment" : true,
-            "beforeLineComment" : true,
-            "allowBlockStart" : true,
-            "allowObjectStart" : true,
-            "allowArrayStart" : true
+            "beforeBlockComment": true,
+            "beforeLineComment": true,
+            "allowBlockStart": true,
+            "allowObjectStart": true,
+            "allowArrayStart": true
         } ],
         "max-nested-callbacks": 0,                  // specify the maximum depth callbacks can be nested
         "new-cap": 2,                               // require a capital letter for constructors
@@ -212,8 +212,8 @@ module.exports = {
         "quotes": [2, "double", "avoid-escape"],    // specify whether double or single quotes should be used
         "require-jsdoc": 0,                         // Require JSDoc comment
         "semi-spacing": [1, {                       // disallow space before/after semicolon
-            "before" : false,
-            "after" : true
+            "before": false,
+            "after": true
         }],
         "semi": 2,                                      // require or disallow use of semicolons instead of ASI
         "sort-vars": 0,                                 // sort variables within the same declaration block
@@ -221,17 +221,18 @@ module.exports = {
         "space-before-blocks": [2, "always"],           // require or disallow space before blocks
         "space-before-function-paren": [2, "never"],    // require a space after function names
         "keyword-spacing": [2, {                        // require spacing before most keywords (fixable)
-            "before" : true,
-            "after" : false,
-            "overrides" : {
-                "return" : {
-                    "after" : true
+            "before": true,
+            "after": false,
+            "overrides": {
+                "return": {
+                    "after": true
                 },
-                "else" : {
-                    "after" : true
+                "else": {
+                    "after": true
                 },
-                "try" : {
-                    "after" : true
+                "try": {
+                    "after": true
+                },
                 }
             }
         }],
