@@ -233,6 +233,8 @@ module.exports = {
                 "try": {
                     "after": true
                 },
+                "from": {
+                    "after": true
                 }
             }
         }],
