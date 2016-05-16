@@ -224,18 +224,11 @@ module.exports = {
             "before": true,
             "after": false,
             "overrides": {
-                "return": {
-                    "after": true
-                },
-                "else": {
-                    "after": true
-                },
-                "try": {
-                    "after": true
-                },
-                "from": {
-                    "after": true
-                }
+                "return": { "after": true },
+                "else":   { "after": true },
+                "try":    { "after": true },
+                "from":   { "after": true },
+                "import": { "after": true }
             }
         }],
         "space-in-parens": 0,                           // require or disallow spaces inside parentheses
