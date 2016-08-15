@@ -3,6 +3,10 @@ module.exports = {
         "ecmaVersion": 6
     },
 
+    "env": {
+        "es6": true
+    },
+
     "rules": {
         ////////// Possible Errors //////////
 
