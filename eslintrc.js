@@ -199,6 +199,9 @@ module.exports = {
                 },
                 "import": {
                     "after": true
+                },
+                "export": {
+                    "after": true
                 }
             }
         }],
