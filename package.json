@@ -8,5 +8,9 @@
     "eslint-config"
   ],
   "author": "Pat Cavit <npm@patcavit.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "arenanet/eslint-config-arenanet",
+  "bugs": {
+    "url": "https://github.com/arenanet/eslint-config-arenanet/issues"
+  }
 }
