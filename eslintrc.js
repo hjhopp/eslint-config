@@ -11,7 +11,7 @@ module.exports = {
         ////////// Possible Errors //////////
 
         // disallow trailing commas in object literals
-        "comma-dangle": "warn",
+        "comma-dangle": "off",
         // disallow assignment in conditional expressions
         "no-cond-assign": "error",
         // disallow use of console (off by default in the node environment)
