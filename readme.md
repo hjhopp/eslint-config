@@ -1,6 +1,8 @@
 eslint-config-arenanet
 ======================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/arenanet/eslint-config-arenanet.svg)](https://greenkeeper.io/)
+
 ESLint config for ArenaNet JS code
 
 ## Install
