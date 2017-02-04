@@ -1,13 +1,14 @@
 "use strict";
 
-var fs = require("fs"),
-
-    CLI = require("eslint").CLIEngine,
+var CLI = require("eslint").CLIEngine,
     
     cli = new CLI({
         configFile : "./eslintrc.js"
     }),
     
-    report = cli.executeOnFiles([ "./test/specimen.js" ]);
+    report = cli.executeOnFiles([ "./test/specimen.js" ]),
+    format = cli.getFormatter();
 
-process.exit(report.errorCode);
+console.log(format(CLI.getErrorResults(report.results)));
+
+process.exit(report.errorCount);
