@@ -229,7 +229,11 @@ module.exports = {
         // disallow use of undefined variable
         "no-undefined": "off",
         // disallow declaration of variables that are not used in the code
-        "no-unused-vars": "warn",
+        "no-unused-vars": ["warn", {
+            "args": "after-used",
+            "ignoreRestSiblings": true,
+            "caughtErrors": "none"
+        } ],
         // disallow use of variables before they are defined
         "no-use-before-define": "warn",
 
@@ -517,6 +521,8 @@ module.exports = {
         "require-yield": "error",
         // disallow spaces inside embedded expressions in template strings
         "template-curly-spacing": "error",
+        // disallow spaces between tagged template literal function and the template literal
+        "template-tag-spacing": ["error", "never"],
         "yield-star-spacing": "error"
     }
 };
