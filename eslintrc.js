@@ -457,7 +457,10 @@ module.exports = {
         // require quotes around object literal property names
         "quote-props": ["warn", "as-needed"],
         // specify whether double or single quotes should be used
-        "quotes": ["error", "double", "avoid-escape"],
+        "quotes": ["error", "double", {
+            "avoidEscape" : true,
+            "allowTemplateLiterals" : true
+        }],
         // Require JSDoc comment
         "require-jsdoc": "off",
         // require or disallow use of semicolons instead of ASI
