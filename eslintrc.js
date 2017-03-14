@@ -301,20 +301,8 @@ module.exports = {
         // Force identifiers to match a regex
         "id-match": "off",
         // specify tab or space width for your code (fixable)
-        "indent": ["warn", 4, {
-            "SwitchCase": 1,
-            "VariableDeclarator": 1,
-            "outerIIFEBody": 1,
-            "FunctionDeclaration":{
-                "body": 1,
-                "parameters": "first"
-            },
-            "CallExpression": {
-                "arguments": "first"
-            },
-            "ArrayExpression": 1,
-            "ObjectExpression": 1
-        }],
+        // we use 4 spaces but eslint gets cranky about some things, so disabled
+        "indent": "off",
         // specify whether double or single quotes should be used in JSX attributes
         "jsx-quotes": "off",
         // enforces spacing between keys and values in object literal properties
