@@ -1,14 +1,21 @@
 "use strict";
 
-var CLI = require("eslint").CLIEngine,
-    
-    cli = new CLI({
-        configFile : "./eslintrc.js"
-    }),
-    
-    report = cli.executeOnFiles([ "./test/specimen.js" ]),
-    format = cli.getFormatter();
+const CLIEngine = require("eslint").CLIEngine;
+const cli = new CLIEngine({
+        configFile : "./eslintrc.js",
+        parserOptions : {
+            ecmaFeatures : {
+                modules : true
+            },
+            sourceType : "module"
+        }
+    });
 
-console.log(format(CLI.getErrorResults(report.results)));
+const report = cli.executeOnFiles([ "./test/specimens/cjs.js", "./test/specimens/esm.js" ]);
+const formatter = cli.getFormatter();
+
+console.log(formatter(report.results));
+
+// console.log(formatter(CLIEngine.getErrorResults(report.results)));
 
 process.exit(report.errorCount);
