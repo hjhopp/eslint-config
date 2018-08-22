@@ -74,7 +74,7 @@ module.exports = {
         // specify the maximum cyclomatic complexity allowed in a program
         "complexity": ["warn", 15],
         // require return statements to either always or never specify values
-        "consistent-return": "warn",
+        "consistent-return": "off",
         // specify curly brace conventions for all control statements
         "curly": "error",
         // require default case in switch statements
@@ -143,7 +143,8 @@ module.exports = {
                 "ObjectExpression": true,
                 "Property": true,
                 "SwitchCase": true,
-                "VariableDeclarator": true
+                "VariableDeclarator": true,
+                "ImportDeclaration": true
             }
         }],
         // disallow use of multiline strings
@@ -336,6 +337,12 @@ module.exports = {
                 },
                 "export": {
                     "after": true
+                },
+                "const": {
+                    "after": true
+                },
+                "let": {
+                    "after": true
                 }
             }
         }],
@@ -432,7 +439,12 @@ module.exports = {
             }
         ],
         // allow just one var statement per function
-        "one-var": "warn",
+        "one-var": [
+            "warn",
+            {
+                "const" : "never"
+            }
+        ],
         "one-var-declaration-per-line": ["warn",
             "initializations"
         ],
@@ -474,12 +486,12 @@ module.exports = {
         "spaced-comment": ["warn", "always"],
         // require regex literals to be wrapped in parentheses
         "wrap-regex": "off",
-        
+
         ////////// ES6 //////////
         // Require curly braces around arrow bodies in most cases
         "arrow-body-style": ["warn", "as-needed"],
         // Require parentheses around arrow function params
-        "arrow-parens": ["error", "always"],
+        "arrow-parens": ["off", "as-needed"],
         // Require spaces on both sides of the => in an arrow function
         "arrow-spacing": "error",
         "constructor-super": "error",
