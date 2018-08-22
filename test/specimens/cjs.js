@@ -25,18 +25,31 @@ let a,
 
     tagged = fn`bar`;
 
-    if(a) {
+    if (a) {
         return arr.map((el) => el.prop);
-    } else if(thing3) {
+    } else if (thing3) {
         return arr.map(el => el.prop);
     }
 
-    if(thing && thing2) {
+    if (thing && thing2) {
         return thing3;
     }
 
-    if(obj.test) {
+    if (obj.test) {
         return obj;
+    }
+
+    switch (thing) {
+        case "value":
+            a = "test2";
+            break;
+
+        default:
+            break;
+    }
+
+    for (let i in thing) {
+        thing[i] = "fake";
     }
 
     return [ a, b ];

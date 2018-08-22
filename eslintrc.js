@@ -343,6 +343,18 @@ module.exports = {
                 },
                 "let": {
                     "after": true
+                },
+                "if": {
+                    "after": true
+                },
+                "switch": {
+                    "after": true
+                },
+                "for": {
+                    "after": true
+                },
+                "catch": {
+                    "after": true
                 }
             }
         }],
