@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-arenanet",
-  "version": "3.3.1",
+  "version": "4.0.0",
   "description": "ESLint config for ArenaNet JS",
   "main": "eslintrc.js",
   "keywords": [
@@ -10,13 +10,13 @@
   "scripts": {
     "test": "node test"
   },
-  "author": "Pat Cavit <npm@patcavit.com>",
+  "author": "ArenaNet Web Programming Team <npm@arena.net>",
   "license": "MIT",
   "repository": "arenanet/eslint-config-arenanet",
   "bugs": {
     "url": "https://github.com/arenanet/eslint-config-arenanet/issues"
   },
   "devDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^5.4.0"
   }
 }
