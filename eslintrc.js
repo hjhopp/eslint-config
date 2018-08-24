@@ -317,43 +317,46 @@ module.exports = {
             "before": true,
             "after": false,
             "overrides": {
-                "return": {
-                    "after": true
-                },
-                "else": {
-                    "after": true
-                },
-                "try": {
-                    "after": true
-                },
                 "case": {
                     "after": true
                 },
-                "from": {
-                    "after": true
-                },
-                "import": {
-                    "after": true
-                },
-                "export": {
+                "catch": {
                     "after": true
                 },
                 "const": {
                     "after": true
                 },
-                "let": {
+                "else": {
                     "after": true
                 },
-                "if": {
-                    "after": true
-                },
-                "switch": {
+                "export": {
                     "after": true
                 },
                 "for": {
                     "after": true
                 },
-                "catch": {
+                "from": {
+                    "after": true
+                },
+                "if": {
+                    "after": true
+                },
+                "import": {
+                    "after": true
+                },
+                "let": {
+                    "after": true
+                },
+                "return": {
+                    "after": true
+                },
+                "switch": {
+                    "after": true
+                },
+                "try": {
+                    "after": true
+                },
+                "while": {
                     "after": true
                 }
             }
