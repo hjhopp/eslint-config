@@ -10,3 +10,10 @@ ESLint config for ArenaNet JS code
 ## Usage
 
 `> eslint -c arenanet <file>`
+
+## Run tests
+
+`> npm test`  
+`> npm test -- all` (to show warnings)
+
+

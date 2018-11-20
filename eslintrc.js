@@ -371,12 +371,13 @@ module.exports = {
             "allowObjectStart": true,
             "allowArrayStart": true
         } ],
+        "max-depth": ["warn", 4],
         // specify the maximum depth callbacks can be nested
         "max-nested-callbacks": "off",
         // limit the number of params a method can take
         "max-params": ["warn", 4],
         // limit the number of statements a method can contain
-        "max-statements": ["warn", 15, {
+        "max-statements": ["warn", 30, {
             "ignoreTopLevelFunctions": true
         }],
         // require a capital letter for constructors
@@ -416,10 +417,7 @@ module.exports = {
             "ClassBody",
             "ClassDeclaration",
             "ClassExpression",
-            "ExperimentalRestProperty",
-            "ExperimentalSpreadProperty",
             "WithStatement",
-            "RestElement",
             "YieldExpression",
             "JSXIdentifier",
             "JSXNamespacedName",

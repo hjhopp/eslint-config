@@ -19,7 +19,7 @@ let a,
             "yes-quote" : true
         };
 
-    function fn() {
+    function fn(...params) {
         return boolean;
     }
 
@@ -32,6 +32,26 @@ let a,
     }
 
     if (thing && thing2) {
+        if (obj.test) {
+            if (!obj.noTest) {
+                if (thing3) {
+                    if (a) {
+                        if (b) { // max-depth
+                            return b;
+                        }
+
+                        return a;
+                    }
+
+                    return null;
+                }
+
+                return "";
+            }
+
+            return false;
+        }
+
         return thing3;
     }
 
