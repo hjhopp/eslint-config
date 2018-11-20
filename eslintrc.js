@@ -377,7 +377,7 @@ module.exports = {
         // limit the number of params a method can take
         "max-params": ["warn", 4],
         // limit the number of statements a method can contain
-        "max-statements": ["warn", 30, {
+        "max-statements": ["warn", 25, {
             "ignoreTopLevelFunctions": true
         }],
         // require a capital letter for constructors
@@ -529,7 +529,7 @@ module.exports = {
         "no-restricted-imports": "error",
         "no-this-before-super": "error",
         "no-useless-constructor": "error",
-        "no-var": "off",
+        "no-var": "warn",
         "object-shorthand": "off",
         "prefer-arrow-callback": "off",
         "prefer-const": "off",
