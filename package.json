@@ -17,6 +17,6 @@
     "url": "https://github.com/arenanet/eslint-config-arenanet/issues"
   },
   "devDependencies": {
-    "eslint": "^5.4.0"
+    "eslint": "^5.16.0"
   }
 }
