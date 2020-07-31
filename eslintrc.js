@@ -414,9 +414,6 @@ module.exports = {
         "no-plusplus": "off",
         // disallow use of certain syntax in code
         "no-restricted-syntax": ["error",
-            "ClassBody",
-            "ClassDeclaration",
-            "ClassExpression",
             "WithStatement",
             "YieldExpression",
             "JSXIdentifier",
