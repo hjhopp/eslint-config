@@ -491,8 +491,8 @@ module.exports = {
         "space-before-function-paren": [
             "warn",
             {
-                "anonymous": "never",
-                "named": "never",
+                "anonymous": "always",
+                "named": "always",
                 "asyncArrow": "ignore"
             }
         ],
