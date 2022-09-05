@@ -1,19 +1,16 @@
-eslint-config-arenanet
+eslint-config-hjh
 ======================
 
-ESLint config for ArenaNet JS code
-
+ESLint config for meeeeee
 ## Install
 
-`> npm install eslint-config-arenanet --save-dev`
+`> npm install eslint-config-hjh --save-dev`
 
 ## Usage
 
-`> eslint -c arenanet <file>`
+`> eslint -c hjh <file>`
 
 ## Run tests
 
-`> npm test`  
+`> npm test`
 `> npm test -- all` (to show warnings)
-
-
